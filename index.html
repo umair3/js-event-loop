@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Event Loop</title>
     <style>
-        .header {
+        header {
             background-color: #D80;
             padding: 24px;
             height: 10px;
@@ -34,9 +34,7 @@
             padding-right: 6px;
         }
 
-        .code-area {}
-
-        .body-right {
+        .right-body {
             position: absolute;
             padding-bottom: 669px;
             margin-right: 599px;
@@ -125,51 +123,55 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
-        </div>
-        <div class="body">
-            <div class="body-right">
-                <div class="button">
-                    <button>Edit</button>
-                    <button>Return</button>
-                    <button>Pause</button>
-                    <button>Resume</button>
-                </div>
-                <div class="code-area">
+        </header>
 
+        <div class="body">
+            <section class="right-body">
+                    <div class="button">
+                        <button>Edit</button>
+                        <button>Return</button>
+                        <button>Pause</button>
+                        <button>Resume</button>
+                    </div>
+                    <div class="code-area">
+
+                    </div>
+            </section>
+            <section class="left-body">
+
+            </section>
+             <div class="left-body">
+
+            <div class="stack-call">
+                <div class="child-stack">
+                    <h3 allign="left">Call Stack</h3>
+                    <div class="c-child-stack">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="web">
+                <div class="child-web">
+                    <h3 allign="left">Web Apis</h3>
+                    <div class="c-child-web">
+
+                    </div>
                 </div>
             </div>
-            <div class="body-left">
-
-                <div class="stack-call">
-                    <div class="child-stack">
-                        <h3 allign="left">Call Stack</h3>
-                        <div class="c-child-stack">
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="web">
-                    <div class="child-web">
-                        <h3 allign="left">Web Apis</h3>
-                        <div class="c-child-web">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="queue">
-                    <div class="child-queue">
-                        <h3 allign="left">Callback Queue</h3>
-                        <div class="c-child-queue">
-
-                        </div>
+            <div class="queue">
+                <div class="child-queue">
+                    <h3 allign="left">Callback Queue</h3>
+                    <div class="c-child-queue">
 
                     </div>
 
                 </div>
+
+            </div>
             </div>
 
         </div>
