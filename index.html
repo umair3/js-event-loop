@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: #D80;
+            padding: 24px;
+            height: 10px;
+            position: relative;
+            padding-top: 1px;
+        }
+
+        .h-text {
+            padding: -5%;
+            color: honeydew;
+            font-size: 132%;
+            padding: -5%;
+            padding-top: -81%;
+            display: inline;
+            position: relative;
+            top: 35%;
+        }
+
+        .button {
+            background: #FDF6E3;
+            float: left;
+            padding-block: 7px;
+            padding-left: 179px;
+            padding-right: 6px;
+        }
+
+        .code-area {}
+
+        .body-right {
+            position: absolute;
+            padding-bottom: 669px;
+            margin-right: 599px;
+            background: #FDF6E3;
+        }
+
+        .stack-call {
+            display: inline-block;
+            width: 21%;
+            margin-top: 7px;
+            margin-bottom: 4px;
+            background-color: white;
+            width: 244px;
+            padding: 20px;
+            margin-bottom: 86px;
+            margin-top: 0px;
+            padding-top: 21px;
+            padding-bottom: 12px;
+            right: 327px;
+            position: absolute;
+            margin-right: 489px;
+
+        }
+
+        .web {
+            display: inline-block;
+            background-color: white;
+            width: 766px;
+            padding: 21px;
+            margin-top: 0px;
+            padding-top: 21px;
+            padding-bottom: 34px;
+            right: 23px;
+            position: absolute;
+            height: 350px;
+            margin-right: -15px;
+        }
+
+        .queue {
+            background-color: white;
+            display: inline-block;
+            width: 70%;
+
+            position: relative;
+            left: 411px;
+            padding: 20px;
+            margin-bottom: 86px;
+            margin-top: 405px;
+            padding-bottom: 23px;
+
+        }
+
+        .child-stack,
+        .child-queue,
+        .child-web {
+            border: 2px #ddd dashed;
+            position: relative;
+            padding: 2px 1px 1px 5px;
+            color: gray;
+        }
+
+        .child-queue {
+            overflow-y: scroll;
+        }
+
+        .child-web {
+            padding-left: 18px;
+            width: 744px;
+        }
+
+        .c-child-stack {
+            padding-bottom: 306px;
+            padding-left: 4px;
+        }
+
+        .c-child-web {
+            padding-bottom: 306px;
+            padding-left: 13px;
+        }
+
+        .c-child-queue {
+            padding: 101px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="h-text"> JavaScript Event Loop</h1>
+        </div>
+        <div class="body">
+            <div class="body-right">
+                <div class="button">
+                    <button>Edit</button>
+                    <button>Return</button>
+                    <button>Pause</button>
+                    <button>Resume</button>
+                </div>
+                <div class="code-area">
+
+                </div>
+            </div>
+            <div class="body-left">
+
+                <div class="stack-call">
+                    <div class="child-stack">
+                        <h3 allign="left">Call Stack</h3>
+                        <div class="c-child-stack">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="web">
+                    <div class="child-web">
+                        <h3 allign="left">Web Apis</h3>
+                        <div class="c-child-web">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="queue">
+                    <div class="child-queue">
+                        <h3 allign="left">Callback Queue</h3>
+                        <div class="c-child-queue">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
