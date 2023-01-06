@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Event Loop</title>
     <style>
-        .header {
+        header {
             background-color: #D80;
             padding: 24px;
             height: 10px;
@@ -35,9 +35,7 @@
             padding-right: 6px;
         }
 
-        .code-area {}
-
-        .body-right {
+        .right-body {
             position: absolute;
             padding-bottom: 669px;
             margin-right: 599px;
@@ -132,13 +130,13 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
             <a class="button">help</a>
-        </div>
+        </header>
         <div class="body">
-            <div class="body-right">
-                <div class="buttons">
+            <section class="right-body">
+                <div class="button">
                     <button>Edit</button>
                     <button>Return</button>
                     <button>Pause</button>
@@ -147,28 +145,27 @@
                 <div class="code-area">
 
                 </div>
-            </div>
-            <div class="body-left">
+            </section>
+            <section class="left-body">
 
-                <div class="stack-call">
+                <section class="stack-call">
                     <div class="child-stack">
                         <h3 allign="left">Call Stack</h3>
                         <div class="c-child-stack">
-
                         </div>
                     </div>
+                </section>
 
-                </div>
-
-                <div class="web">
+                <section class="web">
                     <div class="child-web">
                         <h3 allign="left">Web Apis</h3>
                         <div class="c-child-web">
 
                         </div>
                     </div>
-                </div>
-                <div class="queue">
+                </section>
+
+                <section class="queue">
                     <div class="child-queue">
                         <h3 allign="left">Callback Queue</h3>
                         <div class="c-child-queue">
@@ -176,14 +173,12 @@
                         </div>
 
                     </div>
+                </section>
 
-                </div>
-            </div>
+            </section>
 
         </div>
     </div>
-
-
 </body>
-
 </html>
+
