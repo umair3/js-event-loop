@@ -39,15 +39,27 @@
             padding-bottom: 669px;
             margin-right: 599px;
             background: #FDF6E3;
+            overflow: hidden;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+            font-size: 12px;
+            line-height: normal;
+            direction: ltr;
         }
         .editor {
             display: inline-flex;
             gap: 10px;
             font-family: monospace;
             line-height: 21px;
-           /* background: #282a3a; */
             border-radius: 2px;
             padding: 20px 10px;
+            display: inline-flex;
+            gap: 10px;
+            font-family: monospace;
+            line-height: 20px;
+            /* background: #282a3a; */
+            border-radius: 1px;
+            padding: 20px 10px;
+        
           }
     
           .line-numbers {
@@ -73,6 +85,15 @@
            /* background: #282a3a;  */
            /* color: #FFF; */
             min-width: 500px;
+            outline: none;
+            resize: none;
+            line-height: 12px;
+            overflow-y: hidden;
+            padding: 1px;
+            border: 1;
+            /* background: #282a3a; */
+            /* color: #FFF; */
+            min-width: 400px;
             outline: none;
             resize: none;
           }
@@ -165,12 +186,12 @@
 
         <div class="body">
             <section class="right-body">
-                <div class="button">
+           <!--    <div class="button">
                     <button>Edit</button>
                     <button>Return</button>
                     <button>Pause</button>
                     <button>Resume</button>
-                </div>
+                </div> --> 
                 <div class="code-area">
                     <div class="editor">
                         <div class="line-numbers">
