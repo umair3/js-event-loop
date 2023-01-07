@@ -234,6 +234,7 @@
     </div>
     <script type="text/javascript">
         //Adding number line (239-257)
+    
         const textarea = document.querySelector('textarea')
         const lineNumbers = document.querySelector('.line-numbers')
   
@@ -244,7 +245,6 @@
             .fill('<span></span>')
             .join('')
         })
-  
         textarea.addEventListener('keydown', event => {
           if (event.key === 'Tab') {
             const start = textarea.selectionStart
