@@ -45,6 +45,7 @@
             line-height: normal;
             direction: ltr;
         }
+
         .editor {
             display: inline-flex;
             gap: 10px;
@@ -59,25 +60,25 @@
             /* background: #282a3a; */
             border-radius: 1px;
             padding: 20px 10px;
-        
-          }
-    
-          .line-numbers {
+
+        }
+
+        .line-numbers {
             width: 20px;
             text-align: right;
-          }
-    
-          .line-numbers span {
-            counter-increment:  linenumber;
-          }
-    
-          .line-numbers span::before {
+        }
+
+        .line-numbers span {
+            counter-increment: linenumber;
+        }
+
+        .line-numbers span::before {
             content: counter(linenumber);
             display: block;
-           /* color: #506882; */
-          }
-    
-          textarea {
+            /* color: #506882; */
+        }
+
+        textarea {
             line-height: 21px;
             overflow-y: hidden;
             padding: 0;
@@ -94,7 +95,7 @@
             min-width: 400px;
             outline: none;
             resize: none;
-          }
+        }
 
         .stack-call {
             display: inline-block;
@@ -183,19 +184,19 @@
 
         <div class="body">
             <section class="right-body">
-           <!--    <div class="button">
+                <!--    <div class="button">
                     <button>Edit</button>
                     <button>Return</button>
                     <button>Pause</button>
                     <button>Resume</button>
-                </div> --> 
+                </div> -->
                 <div class="code-area">
                     <div class="editor">
                         <div class="line-numbers">
-                          <span></span>
+                            <span></span>
                         </div>
                         <textarea></textarea>
-                      </div>
+                    </div>
                 </div>
             </section>
             <section class="left-body">
@@ -233,28 +234,28 @@
     </div>
     <script type="text/javascript">
         //Adding number line (239-257)
-    
+
         let textarea = document.querySelector('textarea')
         let lineNumbers = document.querySelector('.line-numbers')
-  
+
         textarea.addEventListener('keyup', event => {
-          let numberOfLines = event.target.value.split('\n').length
-  
-          lineNumbers.innerHTML = Array(numberOfLines)
-            .fill('<span></span>')
-            .join('')
+            let numberOfLines = event.target.value.split('\n').length
+
+            lineNumbers.innerHTML = Array(numberOfLines)
+                .fill('<span></span>')
+                .join('')
         })
         textarea.addEventListener('keydown', event => {
-          if (event.key === 'Tab') {
-            let start = textarea.selectionStart
-            let end = textarea.selectionEnd
-  
-            textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
-  
-            event.preventDefault()
-          }
+            if (event.key === 'Tab') {
+                let start = textarea.selectionStart
+                let end = textarea.selectionEnd
+
+                textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
+
+                event.preventDefault()
+            }
         })
     </script>
 </body>
-</html>
 
+</html>
