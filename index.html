@@ -13,8 +13,12 @@
         }
 
         header {
-            overflow: hidden;
-            padding: 0px 10px;
+            background-color: #D80;
+            padding: 24px;
+            height: 10px;
+            position: relative;
+            padding-top: 1px;
+            color: white;
         }
 
         .h-text {
@@ -28,7 +32,7 @@
             top: 35%;
         }
 
-        .button {
+        .buttons {
             background: #FDF6E3;
             float: left;
             padding-block: 7px;
@@ -36,13 +40,15 @@
             padding-right: 6px;
         }
 
-        .code-area {}
 
-        .body-right {
-            position: absolute;
-            padding-bottom: 669px;
-            margin-right: 599px;
-            background: #FDF6E3;
+
+        .right-body {
+
+            width: 30%;
+            height: 400px;
+            margin-top: 0%;
+            display: inline-block;
+            background-color: rgb(241, 220, 223);
         }
 
         .stack-call {
@@ -122,16 +128,23 @@
         .c-child-queue {
             padding: 101px;
         }
+
+        .button {
+            float: right;
+            background-color: #D80;
+            font-size: larger;
+        }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
+            <a class="button">help</a>
         </header>
         <div class="body">
-            <div class="body-right">
+            <div class="right-body">
                 <div class="button">
                     <button>Edit</button>
                     <button>Return</button>
@@ -142,27 +155,26 @@
 
                 </div>
             </div>
-            <div class="body-left">
+            <section class="left-body">
 
-                <div class="stack-call">
+                <section class="stack-call">
                     <div class="child-stack">
                         <h3 allign="left">Call Stack</h3>
                         <div class="c-child-stack">
-
                         </div>
                     </div>
+                </section>
 
-                </div>
-
-                <div class="web">
+                <section class="web">
                     <div class="child-web">
                         <h3 allign="left">Web Apis</h3>
                         <div class="c-child-web">
 
                         </div>
                     </div>
-                </div>
-                <div class="queue">
+                </section>
+
+                <section class="queue">
                     <div class="child-queue">
                         <h3 allign="left">Callback Queue</h3>
                         <div class="c-child-queue">
@@ -170,14 +182,12 @@
                         </div>
 
                     </div>
+                </section>
 
-                </div>
-            </div>
+            </section>
 
         </div>
     </div>
-
-
 </body>
 
 </html>
