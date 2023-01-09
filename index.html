@@ -32,6 +32,11 @@
             top: 35%;
         }
 
+        .main {
+            display: flex;
+            margin-top: 5px;
+        }
+
         .buttons {
             background: #FDF6E3;
             float: left;
@@ -143,7 +148,7 @@
             <h1 class="h-text"> JavaScript Event Loop</h1>
             <a class="button">help</a>
         </header>
-        <div class="body">
+        <div class="main">
             <div class="right-body">
                 <div class="button">
                     <button>Edit</button>
@@ -155,38 +160,39 @@
 
                 </div>
             </div>
-            <section class="left-body">
+            <!-- <section class="left-body"> -->
 
-                <section class="stack-call">
-                    <div class="child-stack">
-                        <h3 allign="left">Call Stack</h3>
-                        <div class="c-child-stack">
-                        </div>
+            <section class="stack-call">
+                <div class="child-stack">
+                    <h3 allign="left">Call Stack</h3>
+                    <div class="c-child-stack">
                     </div>
-                </section>
-
-                <section class="web">
-                    <div class="child-web">
-                        <h3 allign="left">Web Apis</h3>
-                        <div class="c-child-web">
-
-                        </div>
-                    </div>
-                </section>
-
-                <section class="queue">
-                    <div class="child-queue">
-                        <h3 allign="left">Callback Queue</h3>
-                        <div class="c-child-queue">
-
-                        </div>
-
-                    </div>
-                </section>
-
+                </div>
             </section>
 
+            <section class="web">
+                <div class="child-web">
+                    <h3 allign="left">Web Apis</h3>
+                    <div class="c-child-web">
+
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <section class="queue">
+            <div class="child-queue">
+                <h3 allign="left">Callback Queue</h3>
+                <div class="c-child-queue">
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
     </div>
 </body>
 
