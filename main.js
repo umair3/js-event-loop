@@ -110,4 +110,5 @@ Queue.prototype.isEmpty = function () {
 callback_queue = new Queue()
 
 console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
-console.log("callback_queue is pushed: " + callback_queue.enqueue("queue"));
+console.log("callback_queue is enqueued: " + callback_queue.enqueue("queue"));
+console.log("callback_queue is dequeued: " + callback_queue.dequeue());
