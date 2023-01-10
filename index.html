@@ -35,13 +35,49 @@
             padding-right: 6px;
         }
 
-        .right-body {
+        .left-body {
             position: absolute;
             padding-bottom: 669px;
             margin-right: 599px;
             background: #FDF6E3;
             padding-right: 182px;
         }
+        .editor {
+            display: inline-flex;
+            gap: 10px;
+            font-family: monospace;
+            line-height: 21px;
+           /* background: #282a3a; */
+            border-radius: 2px;
+            padding: 20px 10px;
+          }
+    
+          .line-numbers {
+            width: 20px;
+            text-align: right;
+          }
+    
+          .line-numbers span {
+            counter-increment:  linenumber;
+          }
+    
+          .line-numbers span::before {
+            content: counter(linenumber);
+            display: block;
+           /* color: #506882; */
+          }
+    
+          textarea {
+            line-height: 21px;
+            overflow-y: hidden;
+            padding: 0;
+            border: 0;
+           /* background: #282a3a;  */
+           /* color: #FFF; */
+            min-width: 500px;
+            outline: none;
+            resize: none;
+          }
 
         .stack-call {
             display: inline-block;
@@ -125,6 +161,7 @@
             float: right;
             background-color: #D80;
             font-size: larger;
+            color: white;
         }
     </style>
 </head>
@@ -133,10 +170,10 @@
     <div class="wrapper">
         <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
-            <a class="button">help</a>
+            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s">help</a>
         </header>
         <div class="body">
-            <section class="right-body">
+            <section class="left-body">
                 <div class="buttons">
                     <button>Edit</button>
                     <button>Return</button>
@@ -144,10 +181,15 @@
                     <button>Resume</button>
                 </div>
                 <div class="code-area">
-
+                    <div class="editor">
+                        <div class="line-numbers">
+                          <span></span>
+                        </div>
+                        <textarea></textarea>
+                      </div>
                 </div>
             </section>
-            <section class="left-body">
+            <section class="right-body">
 
                 <section class="stack-call">
                     <div class="child-stack">
@@ -180,6 +222,25 @@
 
         </div>
     </div>
+    <script type="text/javascript">
+        const textarea = document.querySelector('textarea')
+        const lineNumbers = document.querySelector('.line-numbers')
+        textarea.addEventListener('keyup', event => {
+          const numberOfLines = event.target.value.split('\n').length
+          lineNumbers.innerHTML = Array(numberOfLines)
+            .fill('<span></span>')
+            .join('')
+        })
+        textarea.addEventListener('keydown', event => {
+          if (event.key === 'Tab') {
+            const start = textarea.selectionStart
+            const end = textarea.selectionEnd
+            textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
+            event.preventDefault()
+          }
+        })
+    </script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 
