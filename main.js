@@ -42,6 +42,11 @@ Stack.prototype.pop = function () {
 }
 Stack.prototype.peek = function () {
     // read top value
+    if (this.items === 0) {
+        return "nothing in stack"
+      }
+      //return this[this.items - 1];
+      return this.items[i-1];
 }
 Stack.prototype.isEmpty = function () {
     // true if stack is empty
@@ -56,7 +61,11 @@ call_stack = new Stack()
 //call_stack.isEmpty is not a function
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
 console.log("call stack is pushed: " + call_stack.push("7"));
+console.log("call stack is pushed: " + call_stack.push(6));
+console.log("call stack is pushed: " + call_stack.push(4));
 console.log("call stack is poped: " + call_stack.pop());
+console.log("call stack is peeked: " + call_stack.peek());
+
 
 // [1], [1, 2, 3]
 
