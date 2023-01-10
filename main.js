@@ -23,22 +23,22 @@ textarea.addEventListener('keydown', event => {
 })
 
 // Prototypal Inheritance
-let i = 0;
 function Stack()
 {
     this.items = []; //[1, 2, 3, 4]
+    this.i = 0;
     
 }
 
 Stack.prototype.push = function (v) {
     // add an item
-    this.items[i] = v;
-    i++;
+    this.items[this.i] = v;
+    this.i++;
     return v;
 }
 Stack.prototype.pop = function () {
     // returns top value and remove it
-    return this.items[i-1];
+    return this.items[this.i-1];
 }
 Stack.prototype.peek = function () {
     // read top value
@@ -46,7 +46,7 @@ Stack.prototype.peek = function () {
         return "nothing in stack"
       }
       //return this[this.items - 1];
-      return this.items[i-1];
+      return this.items[this.i-1];
 }
 Stack.prototype.isEmpty = function () {
     // true if stack is empty
@@ -62,7 +62,7 @@ call_stack = new Stack()
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
 console.log("call stack is pushed: " + call_stack.push("stack"));
 console.log("call stack is pushed: " + call_stack.push(6));
-console.log("call stack is pushed: " + call_stack.push(4));
+console.log("call stack is pushed: " + call_stack.push(64));
 console.log("call stack is poped: " + call_stack.pop());
 console.log("call stack is peeked: " + call_stack.peek());
 console.log("call stack is pushed: " + call_stack.push(9));
