@@ -13,6 +13,7 @@
             height: 10px;
             position: relative;
             padding-top: 1px;
+            color: white;
         }
 
         .h-text {
@@ -26,7 +27,7 @@
             top: 35%;
         }
 
-        .button {
+        .buttons {
             background: #FDF6E3;
             float: left;
             padding-block: 7px;
@@ -154,6 +155,13 @@
         .c-child-queue {
             padding: 101px;
         }
+
+        .button {
+            float: right;
+            background-color: #D80;
+            font-size: larger;
+            color: white;
+        }
     </style>
 </head>
 
@@ -161,8 +169,8 @@
     <div class="wrapper">
         <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
+            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s">help</a>
         </header>
-
         <div class="body">
             <section class="right-body">
                 <div class="button">
@@ -216,26 +224,22 @@
     <script type="text/javascript">
         const textarea = document.querySelector('textarea')
         const lineNumbers = document.querySelector('.line-numbers')
-  
         textarea.addEventListener('keyup', event => {
           const numberOfLines = event.target.value.split('\n').length
-  
           lineNumbers.innerHTML = Array(numberOfLines)
             .fill('<span></span>')
             .join('')
         })
-  
         textarea.addEventListener('keydown', event => {
           if (event.key === 'Tab') {
             const start = textarea.selectionStart
             const end = textarea.selectionEnd
-  
             textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
-  
             event.preventDefault()
           }
         })
     </script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 
