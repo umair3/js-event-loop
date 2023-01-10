@@ -23,17 +23,22 @@ textarea.addEventListener('keydown', event => {
 })
 
 // Prototypal Inheritance
+let i = 0;
 function Stack()
 {
     this.items = []; //[1, 2, 3, 4]
+    
 }
 
 Stack.prototype.push = function (v) {
     // add an item
+    this.items[i] = v;
+    i++;
+    return v;
 }
 Stack.prototype.pop = function () {
     // returns top value and remove it
-    return 0
+    return this.items[i-1];
 }
 Stack.prototype.peek = function () {
     // read top value
@@ -50,6 +55,8 @@ Stack.prototype.isEmpty = function () {
 call_stack = new Stack()
 //call_stack.isEmpty is not a function
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
+console.log("call stack is pushed: " + call_stack.push("7"));
+console.log("call stack is poped: " + call_stack.pop());
 
 // [1], [1, 2, 3]
 
