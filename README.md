@@ -1,5 +1,5 @@
 # js-event-loop
-JavaScript Event Loop is a concept impelementation by;
+JavaScript Event Loop is a concept impelementation.
 
 
 ## Authors
