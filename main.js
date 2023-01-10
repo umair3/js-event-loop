@@ -93,10 +93,11 @@ Queue.prototype.dequeue = function () {
 }
 Queue.prototype.rear = function () {
     // read last value
-
+   return this.items[this.i - 1];
 }
 Queue.prototype.front = function () {
     // read first value
+     return this.items[this.i + 1];
 }
 Queue.prototype.isEmpty = function () {
     // true if stack is empty
@@ -112,3 +113,9 @@ callback_queue = new Queue()
 console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
 console.log("callback_queue is enqueued: " + callback_queue.enqueue("queue"));
 console.log("callback_queue is dequeued: " + callback_queue.dequeue());
+console.log("callback_queue is enqueued: " + callback_queue.enqueue(5));
+console.log("callback_queue is enqueued: " + callback_queue.enqueue(8));
+console.log("callback_queue is enqueued: " + callback_queue.enqueue(6));
+console.log("read first value of callback_queue : " + callback_queue.front());
+console.log("read last value of callback_queue : " + callback_queue.rear());
+
