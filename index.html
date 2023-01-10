@@ -42,42 +42,45 @@
             background: #FDF6E3;
             padding-right: 182px;
         }
+
         .editor {
             display: inline-flex;
             gap: 10px;
             font-family: monospace;
             line-height: 21px;
-           /* background: #282a3a; */
+            /* background: #282a3a; */
             border-radius: 2px;
             padding: 20px 10px;
-          }
-    
-          .line-numbers {
+        }
+
+        .line-numbers {
             width: 20px;
             text-align: right;
-          }
-    
-          .line-numbers span {
-            counter-increment:  linenumber;
-          }
-    
-          .line-numbers span::before {
+        }
+
+        .line-numbers span {
+            counter-increment: linenumber;
+        }
+
+        .line-numbers span::before {
             content: counter(linenumber);
             display: block;
-           /* color: #506882; */
-          }
-    
-          textarea {
+            /* color: #506882; */
+        }
+
+        textarea {
             line-height: 21px;
             overflow-y: hidden;
             padding: 0;
             border: 0;
-           /* background: #282a3a;  */
-           /* color: #FFF; */
+            /* background: #282a3a;  */
+            /* color: #FFF; */
             min-width: 500px;
             outline: none;
             resize: none;
-          }
+            background-color: #FDF6E3;
+            margin-top: -37px;
+        }
 
         .stack-call {
             display: inline-block;
@@ -163,6 +166,13 @@
             font-size: larger;
             color: white;
         }
+
+        .line-numbers {
+            background-color: #efe4c1;
+            text-align: center;
+            margin-top: -38px;
+            margin-left: -8px;
+        }
     </style>
 </head>
 
@@ -183,10 +193,10 @@
                 <div class="code-area">
                     <div class="editor">
                         <div class="line-numbers">
-                          <span></span>
+                            <span></span>
                         </div>
                         <textarea></textarea>
-                      </div>
+                    </div>
                 </div>
             </section>
             <section class="right-body">
@@ -226,21 +236,21 @@
         const textarea = document.querySelector('textarea')
         const lineNumbers = document.querySelector('.line-numbers')
         textarea.addEventListener('keyup', event => {
-          const numberOfLines = event.target.value.split('\n').length
-          lineNumbers.innerHTML = Array(numberOfLines)
-            .fill('<span></span>')
-            .join('')
+            const numberOfLines = event.target.value.split('\n').length
+            lineNumbers.innerHTML = Array(numberOfLines)
+                .fill('<span></span>')
+                .join('')
         })
         textarea.addEventListener('keydown', event => {
-          if (event.key === 'Tab') {
-            const start = textarea.selectionStart
-            const end = textarea.selectionEnd
-            textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
-            event.preventDefault()
-          }
+            if (event.key === 'Tab') {
+                const start = textarea.selectionStart
+                const end = textarea.selectionEnd
+                textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
+                event.preventDefault()
+            }
         })
     </script>
     <script type="text/javascript" src="main.js"></script>
 </body>
-</html>
 
+</html>
