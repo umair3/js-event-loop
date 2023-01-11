@@ -4,7 +4,6 @@ function Stack()
 {
     this.items = []; //[1, 2, 3, 4]
 }
-
 Stack.prototype.push = function (v) {
     // add an item
 }
@@ -22,21 +21,14 @@ Stack.prototype.isEmpty = function () {
         return true;
     return false;
 }
-
-
 call_stack = new Stack()
 //call_stack.isEmpty is not a function
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
-
-
 // [1], [1, 2, 3]
-
-
 function Queue()
 {
     this.items = []; //[1, 2, 3, 4]
 }
-
 Queue.prototype.enqueue = function (v) {
     // add an item
 }
@@ -57,12 +49,5 @@ Queue.prototype.isEmpty = function () {
         return true;
     return false;
 }
-
-
 callback_queue = new Queue()
-
 console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
-
-=======
-
-
