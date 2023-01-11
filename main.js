@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 //Adding number line 
 
 let textarea = document.querySelector('textarea')
@@ -22,16 +23,22 @@ textarea.addEventListener('keydown', event => {
     }
 })
 
+=======
+>>>>>>> main
 // Prototypal Inheritance
 function Stack()
 {
     this.items = []; //[1, 2, 3, 4]
+<<<<<<< HEAD
     this.i = 0;
     
+=======
+>>>>>>> main
 }
 
 Stack.prototype.push = function (v) {
     // add an item
+<<<<<<< HEAD
     this.items[this.i] = v;
     this.i++;
     return v;
@@ -47,6 +54,15 @@ Stack.prototype.peek = function () {
       }
       //return this[this.items - 1];
       return this.items[this.i-1];
+=======
+}
+Stack.prototype.pop = function () {
+    // returns top value and remove it
+    return 0
+}
+Stack.prototype.peek = function () {
+    // read top value
+>>>>>>> main
 }
 Stack.prototype.isEmpty = function () {
     // true if stack is empty
@@ -58,6 +74,7 @@ Stack.prototype.isEmpty = function () {
 
 
 call_stack = new Stack()
+<<<<<<< HEAD
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
 console.log("call stack is pushed: " + call_stack.push("stack"));
 console.log("call stack is pushed: " + call_stack.push(6));
@@ -65,12 +82,19 @@ console.log("call stack is pushed: " + call_stack.push(64));
 console.log("call stack is poped: " + call_stack.pop());
 console.log("call stack is peeked: " + call_stack.peek());
 console.log("call stack is pushed: " + call_stack.push(9));
+=======
+//call_stack.isEmpty is not a function
+console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
+
+
+>>>>>>> main
 // [1], [1, 2, 3]
 
 
 function Queue()
 {
     this.items = []; //[1, 2, 3, 4]
+<<<<<<< HEAD
     this.size = 10;
     this.i = 0;
 }
@@ -94,6 +118,85 @@ Queue.prototype.rear = function () {
 Queue.prototype.front = function () {
     // read first value
      return this.items[this.i + 1];
+=======
+}
+
+Queue.prototype.enqueue = function (v) {
+    // add an item
+}
+Queue.prototype.dequeue = function () {
+    // returns last value and remove it
+    return 0
+}
+Queue.prototype.rear = function () {
+    // read last value
+}
+Queue.prototype.front = function () {
+    // read first value
+}
+Queue.prototype.isEmpty = function () {
+    // true if queue is empty
+    // false if queue is not empty
+    if(this.items.length == 0)
+        return true;
+    return false;
+}
+
+
+callback_queue = new Queue()
+
+console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
+
+=======
+// Prototypal Inheritance
+function Stack()
+{
+    this.items = []; //[1, 2, 3, 4]
+}
+
+Stack.prototype.push = function (v) {
+    // add an item
+}
+Stack.prototype.pop = function () {
+    // returns top value and remove it
+    return 0
+}
+Stack.prototype.peek = function () {
+    // read top value
+}
+Stack.prototype.isEmpty = function () {
+    // true if stack is empty
+    // false if stack is not empty
+    if(this.items.length == 0)
+        return true;
+    return false;
+}
+
+
+call_stack = new Stack()
+//call_stack.isEmpty is not a function
+console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
+
+// [1], [1, 2, 3]
+
+function Queue()
+{
+    this.items = []; //[1, 2, 3, 4]
+}
+
+Queue.prototype.enqueue = function (v) {
+    // add an item
+}
+Queue.prototype.dequeue = function () {
+    // returns top value and remove it
+    return 0
+}
+Queue.prototype.rear = function () {
+    // read last value
+}
+Queue.prototype.front = function () {
+    // read first value
+>>>>>>> main
 }
 Queue.prototype.isEmpty = function () {
     // true if stack is empty
@@ -107,6 +210,7 @@ Queue.prototype.isEmpty = function () {
 callback_queue = new Queue()
 
 console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
+<<<<<<< HEAD
 console.log("callback_queue is enqueued: " + callback_queue.enqueue("queue"));
 console.log("callback_queue is dequeued: " + callback_queue.dequeue());
 console.log("callback_queue is enqueued: " + callback_queue.enqueue(5));
@@ -114,4 +218,6 @@ console.log("callback_queue is enqueued: " + callback_queue.enqueue(8));
 console.log("callback_queue is enqueued: " + callback_queue.enqueue(6));
 console.log("read first value of callback_queue : " + callback_queue.front());
 console.log("read last value of callback_queue : " + callback_queue.rear());
+=======
+>>>>>>> main
 
