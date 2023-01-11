@@ -9,4 +9,4 @@ JavaScript Event Loop is a concept impelementation.
 - Mamoona Ijaz <moonijaz006@gmail.com>
 - Khushbakht Tahir <khush.bakht334@gmail.com>
 - sadia sehar <sadia.layyah@gmail.com>
-
+- Rizwan Ahmed <Rizwanahmedg2020@gmail.com>
