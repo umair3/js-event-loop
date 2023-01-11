@@ -63,7 +63,6 @@ callback_queue = new Queue()
 
 console.log("callback_queue is empty: " + callback_queue.isEmpty()); 
 
-=======
 // Prototypal Inheritance
 function Stack()
 {
