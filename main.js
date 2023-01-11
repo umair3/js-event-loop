@@ -58,7 +58,6 @@ Stack.prototype.isEmpty = function () {
 
 
 call_stack = new Stack()
-//call_stack.isEmpty is not a function
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
 console.log("call stack is pushed: " + call_stack.push("stack"));
 console.log("call stack is pushed: " + call_stack.push(6));
@@ -66,9 +65,6 @@ console.log("call stack is pushed: " + call_stack.push(64));
 console.log("call stack is poped: " + call_stack.pop());
 console.log("call stack is peeked: " + call_stack.peek());
 console.log("call stack is pushed: " + call_stack.push(9));
-
-
-
 // [1], [1, 2, 3]
 
 
