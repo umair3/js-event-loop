@@ -10,12 +10,12 @@ header {
 .h-text {
     padding: -5%;
     color: honeydew;
-    font-size: 132%;
+    font-size: 140%;
     padding: -5%;
     padding-top: -81%;
     display: inline;
     position: relative;
-    top: 35%;
+    top: -30%;
 }
 
 .buttons {
@@ -181,4 +181,14 @@ textarea {
     margin-top: -48px;
 margin-left: -1px;
 margin-bottom: 27px;
+}
+.settings-button{
+    border: none;
+    background: none;
+    color: #eee;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-right: 13px;
+    margin-top: -5px;
 }
