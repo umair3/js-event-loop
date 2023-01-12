@@ -58,13 +58,10 @@
     </div>
     <script type="text/javascript">
         //Adding number line (239-257)
-
         let textarea = document.querySelector('textarea')
         let lineNumbers = document.querySelector('.line-numbers')
-
         textarea.addEventListener('keyup', event => {
             let numberOfLines = event.target.value.split('\n').length
-
             lineNumbers.innerHTML = Array(numberOfLines)
                 .fill('<span></span>')
                 .join('')
@@ -73,9 +70,7 @@
             if (event.key === 'Tab') {
                 let start = textarea.selectionStart
                 let end = textarea.selectionEnd
-
                 textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
-
                 event.preventDefault()
             }
         })
