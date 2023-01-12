@@ -6,184 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Event Loop</title>
-    <style>
-        header {
-            background-color: #D80;
-            padding: 24px;
-            height: 10px;
-            position: relative;
-            padding-top: 1px;
-        }
 
-        .h-text {
-            padding: -5%;
-            color: honeydew;
-            font-size: 132%;
-            padding: -5%;
-            padding-top: -81%;
-            display: inline;
-            position: relative;
-            top: 35%;
-        }
+    <link rel="stylesheet" href="main.css">
 
-        .button {
-            background: #FDF6E3;
-            float: left;
-            padding-block: 7px;
-            padding-left: 179px;
-            padding-right: 6px;
-        }
-
-        .right-body {
-            position: absolute;
-            padding-bottom: 400px;
-            margin-right: 598px;
-            background: #FDF6E3;
-            overflow: hidden;
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-            font-size: 12px;
-            line-height: normal;
-            direction: ltr;
-        }
-
-        .editor {
-            display: inline-flex;
-            gap: 10px;
-            font-family: monospace;
-            line-height: 21px;
-            border-radius: 2px;
-            padding: 20px 10px;
-            display: inline-flex;
-            gap: 10px;
-            font-family: monospace;
-            line-height: 20px;
-            border-radius: 1px;
-            padding: 20px 10px;
-
-        }
-
-        .line-numbers {
-            width: 20px;
-            text-align: right;
-        }
-
-        .line-numbers span {
-            counter-increment: linenumber;
-        }
-
-        .line-numbers span::before {
-            content: counter(linenumber);
-            display: block;
-            /* color: #506882; */
-        }
-
-        textarea {
-            line-height: 21px;
-            overflow-y: hidden;
-            padding: 0;
-            border: 0;
-            min-width: 500px;
-            outline: none;
-            resize: none;
-            line-height: 12px;
-            overflow-y: hidden;
-            padding: 1px;
-            border: 1;
-            /* background: #282a3a; */
-            /* color: #FFF; */
-            min-width: 400px;
-            outline: none;
-            resize: none;
-        }
-
-        .stack-call {
-            display: inline-block;
-            width: 21%;
-            margin-top: 7px;
-            margin-bottom: 4px;
-            background-color: white;
-            width: 244px;
-            padding: 20px;
-            margin-bottom: 86px;
-            margin-top: 0px;
-            padding-top: 21px;
-            padding-bottom: 12px;
-            right: 327px;
-            position: absolute;
-            margin-right: 489px;
-
-        }
-
-        .web {
-            display: inline-block;
-            background-color: white;
-            width: 766px;
-            padding: 21px;
-            margin-top: 0px;
-            padding-top: 21px;
-            padding-bottom: 34px;
-            right: 23px;
-            position: absolute;
-            height: 350px;
-            margin-right: -15px;
-        }
-
-        .queue {
-            background-color: white;
-            display: inline-block;
-            width: 67%;
-            position: relative;
-            left: 476px;
-            padding: 18px;
-            /* margin-bottom: 58px; */
-            margin-top: 405px;
-            /* padding-bottom: 23px; */
-
-        }
-
-        .child-stack,
-        .child-queue,
-        .child-web {
-            border: 2px #ddd dashed;
-            position: relative;
-            padding: 2px 1px 1px 5px;
-            color: gray;
-        }
-
-        .child-queue {
-            overflow-y: scroll;
-        }
-
-        .child-web {
-            padding-left: 18px;
-            width: 744px;
-        }
-
-        .c-child-stack {
-            padding-bottom: 306px;
-            padding-left: 4px;
-        }
-
-        .c-child-web {
-            padding-bottom: 306px;
-            padding-left: 13px;
-        }
-
-        .c-child-queue {
-            padding: 101px;
-        }
-    </style>
+    
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
+            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s">help</a>
         </header>
-
         <div class="body">
-            <section class="right-body">
-                <div class="button">
+            <section class="left-body">
+                <div class="buttons">
                     <button>Edit</button>
                     <button>Return</button>
                     <button>Pause</button>
@@ -198,7 +35,7 @@
                     </div>
                 </div>
             </section>
-            <section class="left-body">
+            <section class="right-body">
 
                 <section class="stack-call">
                     <div class="child-stack">
@@ -255,6 +92,7 @@
             }
         })
     </script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
