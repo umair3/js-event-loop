@@ -17,7 +17,7 @@
         <header>
             <button class="settings-button">⚒</button>
             <h1 class="h-text"> JavaScript Event Loop</h1>
-            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s">help</a>
+            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
         </header>
         <div class="body">
             <section class="left-body">
@@ -70,19 +70,25 @@
         </div>
     </div>
     <script type="text/javascript">
-        const textarea = document.querySelector('textarea')
-        const lineNumbers = document.querySelector('.line-numbers')
+        //Adding number line (239-257)
+
+        let textarea = document.querySelector('textarea')
+        let lineNumbers = document.querySelector('.line-numbers')
+
         textarea.addEventListener('keyup', event => {
-            const numberOfLines = event.target.value.split('\n').length
+            let numberOfLines = event.target.value.split('\n').length
+
             lineNumbers.innerHTML = Array(numberOfLines)
                 .fill('<span></span>')
                 .join('')
         })
         textarea.addEventListener('keydown', event => {
             if (event.key === 'Tab') {
-                const start = textarea.selectionStart
-                const end = textarea.selectionEnd
+                let start = textarea.selectionStart
+                let end = textarea.selectionEnd
+
                 textarea.value = textarea.value.substring(0, start) + '\t' + textarea.value.substring(end)
+
                 event.preventDefault()
             }
         })
