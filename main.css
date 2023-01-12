@@ -27,11 +27,14 @@ header {
 }
 
 .left-body {
-    position: absolute;
-    padding-bottom: 571px;
-    margin-right: 599px;
     background: #FDF6E3;
-    padding-right: 182px;
+    float: left;
+}
+
+.right-body {
+    overflow: hidden;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-size: 12px;
 }
 
 .editor {
@@ -46,8 +49,11 @@ header {
 
 .line-numbers {
     width: 20px;
-
+    background-color: #efe4c1;
     text-align: center;
+    margin-top: -48px;
+    margin-left: -1px;
+    margin-bottom: 27px;
 }
 
 
@@ -73,18 +79,14 @@ header {
 
 textarea {
     line-height: 21px;
+    margin-top: -64px;
     overflow-y: hidden;
-    padding: 0;
-    border: 0;
-    /* background: #282a3a;  */
-    /* color: #FFF; */
-    min-width: 500px;
+    padding: 1px;
+    border: 1;
+    min-width: 400px;
     outline: none;
     resize: none;
     background-color: #FDF6E3;
-    
-    margin-top: -64px;
-
 }
 
   
@@ -173,12 +175,4 @@ textarea {
     background-color: #D80;
     font-size: larger;
     color: white;
-}
-
-.line-numbers {
-    background-color: #efe4c1;
-    text-align: center;
-    margin-top: -48px;
-margin-left: -1px;
-margin-bottom: 27px;
 }
