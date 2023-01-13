@@ -23,22 +23,27 @@ header {
 }
 
 .buttons {
-    background: #FDF6E3;
-    float: left;
-    padding-block: 7px;
-    padding-left: 179px;
-    padding-right: 6px;
+    margin-left: 90%;
+    display: flex;
 }
 
-.left-body {
+.main {
     background: #FDF6E3;
-    float: left;
+    display: inline-flex;
+}
+.left-body {
+    width: 10%;
+    height: 100%;
 }
 
 .right-body {
-    overflow: hidden;
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-    font-size: 12px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.child-stack {
+    width: 30%;
+    height: 300px;
 }
 
 .editor {
@@ -46,7 +51,6 @@ header {
     gap: 10px;
     font-family: monospace;
     line-height: 60px;
-    /* background: #282a3a; */
     border-radius: 2px;
     padding: 20px 10px;
 }
@@ -74,7 +78,6 @@ header {
 
     content: counter(linenumber);
     display: block;
-    /* color: #506882; */
 }
 
 textarea {
@@ -83,7 +86,7 @@ textarea {
     overflow-y: hidden;
     padding: 1px;
     border: 1;
-    min-width: 400px;
+    min-width: 300px;
     outline: none;
     resize: none;
     background-color: #FDF6E3;
@@ -139,7 +142,7 @@ textarea {
 .child-queue,
 .child-web {
     border: 2px #ddd dashed;
-    position: relative;
+    /* position: relative; */
     padding: 2px 1px 1px 5px;
     color: gray;
 }
@@ -150,7 +153,7 @@ textarea {
 
 .child-web {
     padding-left: 18px;
-    width: 744px;
+    width: 700px;
 }
 
 .c-child-stack {

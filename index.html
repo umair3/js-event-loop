@@ -15,8 +15,8 @@
             <h1 class="h-text"> JavaScript Event Loop</h1>
             <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
         </header>
-        <div class="body">
-            <section class="left-body">
+        <div class="main">
+            <div class="left-body">
                 <div class="buttons">
                     <button>Edit</button>
                     <button>Return</button>
@@ -31,22 +31,20 @@
                         <textarea></textarea>
                     </div>
                 </div>
-            </section>
-            <section class="right-body">
-                <section class="stack-call">
+            </div>
+            <div class="right-body">
                     <div class="child-stack">
                         <h3 allign="left">Call Stack</h3>
                         <div class="c-child-stack">
                         </div>
                     </div>
-                </section>
-                <section class="web">
                     <div class="child-web">
                         <h3 allign="left">Web Apis</h3>
                         <div class="c-child-web">
                         </div>
                     </div>
-                </section>
+            </div>
+        </div>
                 <section class="queue">
                     <div class="child-queue">
                         <h3 allign="left">Callback Queue</h3>
@@ -54,9 +52,8 @@
                         </div>
                     </div>
                 </section>
-            </section>
-        </div>
-    </div>
+            
+    
     <script type="text/javascript">
         //Adding number line (239-257)
         let textarea = document.querySelector('textarea')
