@@ -10,50 +10,44 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper"> -->
-        <header>
-            <h1 class="h-text"> JavaScript Event Loop</h1>
-            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
-        </header>
-        <div class="main">
-            <div class="left-body">
-                <div class="buttons">
-                    <button>Edit</button>
-                    <button>Return</button>
-                    <button>Pause</button>
-                    <button>Resume</button>
-                </div>
-                <div class="code-area">
-                    <div class="editor">
-                        <div class="line-numbers">
-                            <span></span>
-                        </div>
-                        <textarea></textarea>
-                    </div>
-                </div>
+    <header>
+        <h1 class="h-text"> JavaScript Event Loop</h1>
+        <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
+    </header>
+    <div class="main">
+        <div class="left-body">
+            <div class="buttons">
+                <button>Edit</button>
+                <button>Return</button>
+                <button>Pause</button>
+                <button>Resume</button>
             </div>
-            <div class="right-body">
-                    <div class="child-stack">
-                        <h3 allign="left">Call Stack</h3>
-                        <div class="c-child-stack">
-                        </div>
-                    </div>
-                    <div class="child-web">
-                        <h3 allign="left">Web Apis</h3>
-                        <div class="c-child-web">
-                        </div>
-                    </div>
+            <div class="editor">
+                <div class="line-numbers">
+                    <span></span>
+                </div>
+                <textarea></textarea>
             </div>
         </div>
-                <section class="queue">
-                    <div class="child-queue">
-                        <h3 allign="left">Callback Queue</h3>
-                        <div class="c-child-queue">
-                        </div>
-                    </div>
-                </section>
-            
-    
+        <div class="child-stack">
+            <h3 allign="left">Call Stack</h3>
+            <div class="c-child-stack">
+            </div>
+        </div>
+        <div class="child-web">
+            <h3 allign="left">Web Apis</h3>
+            <div class="c-child-web">
+            </div>
+        </div>
+    </div>
+    <div class="queue">
+
+        <h3 allign="left">Callback Queue</h3>
+        <div class="c-child-queue">
+        </div>
+    </div>
+
+
     <script type="text/javascript">
         //Adding number line (239-257)
         let textarea = document.querySelector('textarea')

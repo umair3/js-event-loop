@@ -1,7 +1,8 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
 }
+
 header {
     background-color: #D80;
     padding: 15px;
@@ -20,22 +21,24 @@ header {
 }
 
 .main {
-    background: #FDF6E3;
-    display: inline-flex;
+    display: flex;
+    margin-top: 5px;
 }
+
 .left-body {
     width: 10%;
     height: 100%;
 }
 
-.right-body {
+/* .right-body {
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
     margin-left: 20%;
     margin-top: 20px;
-}
+} */
 .child-stack {
-    width: 30%;
-    height: 300px;
+    margin-left: 30%;
+    width: 40%;
+    height: 350px;
 }
 
 .editor {
@@ -135,7 +138,7 @@ textarea {
 .child-web {
     border: 2px #ddd dashed;
     /* position: relative; */
-    padding: 2px 1px 1px 5px;
+    padding: 0%;
     color: gray;
 }
 
@@ -144,8 +147,9 @@ textarea {
 }
 
 .child-web {
-    padding-left: 18px;
-    width: 700px;
+    /* padding-left: 0px; */
+    margin-left: 4%;
+    width: 50%;
 }
 
 .c-child-stack {
