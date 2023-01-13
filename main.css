@@ -4,22 +4,14 @@ body{
 }
 header {
     background-color: #D80;
-    padding: 24px;
-    height: 10px;
-    position: relative;
-    padding-top: 1px;
+    padding: 15px;
     color: white;
 }
 
 .h-text {
-    padding: -5%;
     color: honeydew;
     font-size: 132%;
-    padding: -5%;
-    padding-top: -81%;
     display: inline;
-    position: relative;
-    top: 35%;
 }
 
 .buttons {
