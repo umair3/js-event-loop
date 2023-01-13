@@ -122,13 +122,13 @@ textarea {
     position: absolute;
     height: 350px;
     margin-right: -15px;
+    
 }
 
 .queue {
     background-color: white;
     display: inline-block;
-    width: 70%;
-
+    width: 98%;
     position: relative;
     left: 411px;
     padding: 20px;
