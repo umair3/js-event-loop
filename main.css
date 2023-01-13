@@ -95,15 +95,13 @@ textarea {
 
 .stack-call {
     float: left;
-    width: 45%;
     background-color: white;
     padding: 20px;
 }
 
 .web {
-    float: right;
+    float: left;
     background-color: white;
-    width: 45%;
     padding: 21px;
     height: 350px;
 }
@@ -116,7 +114,6 @@ textarea {
     margin-bottom: 86px;
     margin-top: 405px;
     padding-bottom: 23px;
-
 }
 
 .child-stack,
