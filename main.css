@@ -61,17 +61,13 @@ header {
     background-color: #efe4c1;
     margin-top: -38px;
     margin-left: -8px;
+    content: counter(linenumber);
 }
 
 .line-numbers span {
     counter-increment: linenumber;
     display: block;
 }
-
-.line-numbers span::before {
-    content: counter(linenumber);
-}
-
 textarea {
     overflow-y: hidden;
     padding: 1px;
