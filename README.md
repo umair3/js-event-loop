@@ -36,3 +36,4 @@ For example, when a function such as setTimeout() or addEventListener() is calle
 - Khushbakht Tahir <khush.bakht334@gmail.com>
 - Sadia Sehar <sadia.layyah@gmail.com>
 - Rizwan Ahmed <Rizwanahmedg2020@gmail.com>
+- Rafay Nadeem <rafaynadeem524@gmail.com>
