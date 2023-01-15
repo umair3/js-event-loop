@@ -63,12 +63,12 @@ header {
 textarea {
     overflow-y: hidden;
     padding: 1px;
-    border: 1;
     min-width: 400px;
     outline: none;
     resize: none;
     background-color: #FDF6E3;
     font-size: inherit;
+    border: none;
 }
 .stack-call {
     float: left;
