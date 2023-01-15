@@ -10,7 +10,15 @@ header {
     padding-top: 1px;
     color: white;
 }
-
+footer {
+    background-color: #D80;
+    padding: 24px;
+    height: 10px;
+    padding-top: 1px;
+    color: white;
+    font-size: 20px;
+    font-style: inherit;
+}
 .h-text {
     padding: -5%;
     color: honeydew;
