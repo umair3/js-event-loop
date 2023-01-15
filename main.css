@@ -137,9 +137,17 @@ textarea {
     padding: 101px;
 }
 
-.button {
+.help {
     float: right;
     background-color: #D80;
     font-size: larger;
     color: white;
+}
+
+.button{
+    border-radius: 8px;
+}
+.fas-fa-sync-alt{
+    font-size:100px;
+    color:black;
 }
