@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Event Loop</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <h1 class="h-text"> JavaScript Event Loop</h1>
-            <a class="button" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
+            <a class="help" href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s" target="blank">help</a>
         </header>
         <div class="body">
             <section class="left-body">
                 <div class="buttons">
-                    <button>Edit</button>
-                    <button>Rerun</button>
-                    <button>Pause</button>
-                    <button>Resume</button>
+                    <button class="button">Edit</button>
+                    <button class="button">Rerun</button>
+                    <button class="button">Pause</button>
+                    <button class="button">Resume</button>
                 </div>
                 <div class="code-area">
                     <div class="editor">
@@ -45,8 +46,10 @@
                         <h3 allign="left">Web Apis</h3>
                         <div class="c-child-web">
                         </div>
+                                                                   
                     </div>
                 </section>
+                <i class="fas fa-sync-alt" style='font-size:55px;color:darkorange'></i>
                 <section class="queue">
                     <div class="child-queue">
                         <h3 allign="left">Callback Queue</h3>
@@ -54,8 +57,13 @@
                         </div>
                     </div>
                 </section>
+                
             </section>
+            
         </div>
+        <footer>
+            Line Count:0 Line Number:0 Status: running||stopped||paused
+        </footer>
     </div>
     <script type="text/javascript">
         //Adding number line (239-257)
