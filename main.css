@@ -1,4 +1,4 @@
-body {    
+body {
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
     font-size: 20px;
     margin: 0%;
@@ -12,6 +12,7 @@ header {
     padding-top: 1px;
     color: white;
 }
+
 footer {
     background-color: #D80;
     padding: 24px;
@@ -21,14 +22,15 @@ footer {
     font-size: 20px;
     font-style: inherit;
 }
+
 .h-text {
     padding: -5%;
     color: honeydew;
-    font-size: 132%;
     padding: -5%;
     padding-top: -81%;
     display: inline;
-    top: 35%;
+    top: -30%;
+    font-size: 140%;
 }
 
 .body {
@@ -53,7 +55,7 @@ footer {
 .right-body {
     order: 2;
     overflow: hidden;
-    flex:auto;
+    flex: auto;
 }
 
 .editor {
@@ -78,6 +80,7 @@ footer {
     counter-increment: linenumber;
     display: block;
 }
+
 textarea {
     overflow-y: hidden;
     padding: 1px;
@@ -150,10 +153,22 @@ textarea {
     color: white;
 }
 
-.button{
+.button {
     border-radius: 8px;
 }
-.fas-fa-sync-alt{
-    font-size:100px;
-    color:black;
+
+.fas-fa-sync-alt {
+    font-size: 100px;
+    color: black;
+}
+
+.settings-button {
+    border: none;
+    background: none;
+    color: #eee;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-right: 13px;
+    margin-top: -5px;
 }
