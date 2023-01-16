@@ -81,7 +81,7 @@ footer {
 textarea {
     overflow-y: hidden;
     padding: 1px;
-    border: 1;
+    border: none;
     min-width: 400px;
     outline: none;
     resize: none;
