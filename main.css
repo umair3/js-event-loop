@@ -152,6 +152,11 @@ textarea {
 
 .button{
     border-radius: 8px;
+    text-decoration: none;
+    float: right;
+    background-color: #D80;
+    font-size: larger;
+    color: white;
 }
 .fas-fa-sync-alt{
     font-size:100px;
