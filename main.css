@@ -65,6 +65,8 @@ footer {
     width: 20px;
     background-color: #efe4c1;
     text-align: center;
+    margin-left: -1px;
+    margin-bottom: 27px;
 }
 
 .line-numbers span::before {
@@ -96,10 +98,12 @@ textarea {
 }
 
 .web {
-    float: left;
     background-color: white;
-    padding: 21px;
     height: 350px;
+    float: right;
+    padding: 0px;
+    width: 74%;
+    padding-top: 20px;
 }
 
 .queue {
