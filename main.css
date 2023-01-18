@@ -118,6 +118,7 @@ textarea {
     border: 2px #ddd dashed;
     padding: 2px 1px 1px 5px;
     color: gray;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .child-queue {
@@ -157,3 +158,4 @@ textarea {
     font-size:100px;
     color:black;
 }
+
