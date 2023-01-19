@@ -25,6 +25,7 @@ call_stack = new Stack()
 //call_stack.isEmpty is not a function
 console.log("call stack is empty: " + call_stack.isEmpty()); // Uncaught TypeError: Cannot read properties of undefined (reading 'isEmpty')
 // [1], [1, 2, 3]
+// for queue
 function Queue()
 {
     this.items = []; //[1, 2, 3, 4]
