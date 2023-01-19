@@ -1,4 +1,4 @@
-body {
+body {    
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
     font-size: 20px;
     margin: 0%;
@@ -11,7 +11,6 @@ header {
     padding-top: 1px;
     color: white;
 }
-
 footer {
     background-color: #D80;
     padding: 24px;
@@ -21,15 +20,14 @@ footer {
     font-size: 20px;
     font-style: inherit;
 }
-
 .h-text {
     padding: -5%;
     color: honeydew;
+    font-size: 132%;
     padding: -5%;
     padding-top: -81%;
     display: inline;
-    top: -30%;
-    font-size: 140%;
+    top: 35%;
 }
 
 .body {
@@ -43,7 +41,7 @@ footer {
     float: left;
     padding-block: 7px;
     padding-left: 179px;
-    padding-right: 41px;
+    padding-right: 6px;
 }
 
 .left-body {
@@ -54,7 +52,7 @@ footer {
 .right-body {
     order: 2;
     overflow: hidden;
-    flex: auto;
+    flex:auto;
 }
 
 .editor {
@@ -79,7 +77,6 @@ footer {
     counter-increment: linenumber;
     display: block;
 }
-
 textarea {
     overflow-y: hidden;
     padding: 1px;
@@ -106,12 +103,12 @@ textarea {
 
 .queue {
     background-color: white;
+    width: 70%;
     left: 411px;
     padding: 20px;
     margin-bottom: 86px;
     margin-top: 405px;
     padding-bottom: 23px;
-    width: 98%;
 }
 
 .child-stack,
@@ -129,7 +126,7 @@ textarea {
 
 .child-web {
     padding-left: 18px;
-    width: 756px;
+    width: 795px;
 }
 
 .c-child-stack {
@@ -153,14 +150,11 @@ textarea {
     color: white;
 }
 
-.button {
+.button{
     border-radius: 8px;
-    text-decoration: none;
-    float: right;
-    background-color: #D80;
-    font-size: larger;
-    color: white;
 }
+
+
 
 .fa-sync-alt {
     font-size:60px;
@@ -182,3 +176,4 @@ textarea {
     margin-right: 13px;
     margin-top: -5px;
 }
+
