@@ -157,6 +157,11 @@ textarea {
     border-radius: 8px;
 }
 
+.fa-sync-alt {
+    font-size:60px;
+    color:darkorange;
+}
+
 .fas-fa-sync-alt {
     font-size: 100px;
     color: black;
