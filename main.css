@@ -45,7 +45,7 @@ footer {
 }
 
 .left-body {
-    border: 1;
+    order: 1;
     background: #FDF6E3;
 }
 
