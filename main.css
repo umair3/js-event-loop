@@ -4,7 +4,6 @@ body {
     margin: 0%;
     padding: 0%;
 }
-
 header {
     background-color: #D80;
     padding: 24px;
@@ -118,6 +117,7 @@ textarea {
     border: 2px #ddd dashed;
     padding: 2px 1px 1px 5px;
     color: gray;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .child-queue {
@@ -153,7 +153,27 @@ textarea {
 .button{
     border-radius: 8px;
 }
-.fas-fa-sync-alt{
-    font-size:100px;
-    color:black;
+
+
+
+.fa-sync-alt {
+    font-size:60px;
+    color:darkorange;
 }
+
+.fas-fa-sync-alt {
+    font-size: 100px;
+    color: black;
+}
+
+.settings-button {
+    border: none;
+    background: none;
+    color: #eee;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-right: 13px;
+    margin-top: -5px;
+}
+
