@@ -45,7 +45,7 @@ footer {
 }
 
 .left-body {
-    order: 1;
+    border: 1;
     background: #FDF6E3;
 }
 
@@ -148,6 +148,7 @@ textarea {
     background-color: #D80;
     font-size: larger;
     color: white;
+    text-decoration: none;
 }
 
 
