@@ -84,7 +84,7 @@ footer {
 textarea {
     overflow-y: hidden;
     padding: 1px;
-    border: 1;
+    border: none;
     min-width: 400px;
     outline: none;
     resize: none;
@@ -155,6 +155,11 @@ textarea {
 
 .button {
     border-radius: 8px;
+    text-decoration: none;
+    float: right;
+    background-color: #D80;
+    font-size: larger;
+    color: white;
 }
 
 .fa-sync-alt {
