@@ -54,6 +54,10 @@ footer {
     overflow: hidden;
     flex:auto;
 }
+.upper-body{
+    display: flex;
+    float: left;
+}
 
 .editor {
     display: inline-flex;
@@ -98,17 +102,21 @@ textarea {
     float: left;
     background-color: white;
     padding: 21px;
-    height: 350px;
+    
 }
 
 .queue {
+
     background-color: white;
-    width: 70%;
+     width: 100%; 
     left: 411px;
     padding: 20px;
-    margin-bottom: 86px;
-    margin-top: 405px;
-    padding-bottom: 23px;
+    /* margin-bottom: 86px; */
+    /* margin-top: 405px; */
+    /* padding-bottom: 23px; */
+    display: flex;
+    justify-content: flex-start;
+    
 }
 
 .child-stack,
@@ -125,8 +133,7 @@ textarea {
 }
 
 .child-web {
-    padding-left: 18px;
-    width: 795px;
+    float: left;
 }
 
 .c-child-stack {
@@ -159,6 +166,7 @@ textarea {
 .fa-sync-alt {
     font-size:60px;
     color:darkorange;
+    float: left;
 }
 
 .fas-fa-sync-alt {
