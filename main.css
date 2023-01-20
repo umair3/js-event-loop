@@ -150,11 +150,10 @@ textarea {
     background-color: #D80;
     font-size: larger;
     color: white;
+    text-decoration: none;
 }
 
-.button{
-    border-radius: 8px;
-}
+
 
 .fa-sync-alt {
     font-size: 83px;
