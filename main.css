@@ -103,12 +103,9 @@ textarea {
 
 .queue {
     background-color: white;
-    width: 70%;
-    left: 411px;
-    padding: 20px;
-    margin-bottom: 86px;
-    margin-top: 405px;
-    padding-bottom: 23px;
+    width: 97%;
+    padding: 378px;
+    margin-left: -357px;
 }
 
 .child-stack,
@@ -126,7 +123,7 @@ textarea {
 
 .child-web {
     padding-left: 18px;
-    width: 795px;
+    width: 743px;
 }
 
 .c-child-stack {
