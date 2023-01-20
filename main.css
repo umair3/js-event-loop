@@ -66,6 +66,9 @@ footer {
     width: 20px;
     background-color: #efe4c1;
     text-align: center;
+    margin: 0px;
+    padding-left: 10px;
+    margin-left: -19px;
 }
 
 .line-numbers span::before {
