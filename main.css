@@ -13,12 +13,10 @@ header {
 }
 footer {
     background-color: #D80;
-    padding: 24px;
-    height: 10px;
-    padding-top: 1px;
+    height: -76px;
     color: white;
-    font-size: 20px;
-    font-style: inherit;
+   font-style: inherit;
+    padding-top: -25px;
 }
 .h-text {
     padding: -5%;
@@ -92,20 +90,23 @@ textarea {
     float: left;
     background-color: white;
     padding: 20px;
+    width: 19%;
 }
 
 .web {
-    float: left;
+    
     background-color: white;
     padding: 21px;
     height: 350px;
+    float: right;
+   
 }
 
 .queue {
     background-color: white;
     width: 97%;
-    padding: 378px;
-    margin-left: -357px;
+    margin-left: 19px;
+    margin-top: 18px;
 }
 
 .child-stack,
@@ -154,8 +155,10 @@ textarea {
 
 
 .fa-sync-alt {
-    font-size:60px;
-    color:darkorange;
+    font-size: 83px;
+    color: darkorange;
+    margin-top: 430px;
+    margin-left: -142px;
 }
 
 .fas-fa-sync-alt {
