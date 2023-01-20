@@ -52,6 +52,10 @@ footer {
     overflow: hidden;
     flex:auto;
 }
+.upper-body{
+    display: flex;
+    float: left;
+}
 
 .editor {
     display: inline-flex;
@@ -94,19 +98,18 @@ textarea {
 }
 
 .web {
-    
     background-color: white;
     padding: 21px;
     height: 350px;
     float: right;
-   
 }
 
 .queue {
-    background-color: white;
-    width: 97%;
-    margin-left: 19px;
-    margin-top: 18px;
+    background-color: white; 
+    left: 411px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .child-stack,
@@ -125,6 +128,7 @@ textarea {
 .child-web {
     padding-left: 18px;
     width: 743px;
+    float: left;
 }
 
 .c-child-stack {
@@ -152,13 +156,11 @@ textarea {
     border-radius: 8px;
 }
 
-
-
 .fa-sync-alt {
     font-size: 83px;
     color: darkorange;
-    margin-top: 430px;
-    margin-left: -142px;
+    color:darkorange;
+    float: left;
 }
 
 .fas-fa-sync-alt {
@@ -176,4 +178,3 @@ textarea {
     margin-right: 13px;
     margin-top: -5px;
 }
-
