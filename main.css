@@ -97,7 +97,6 @@ textarea {
     float: left;
     background-color: white;
     padding: 20px;
-    width: 19%;
 }
 
 .web {
@@ -119,7 +118,7 @@ textarea {
 .child-queue,
 .child-web {
     border: 2px #ddd dashed;
-    padding: 2px 1px 1px 5px;
+    padding: 2px 35px 1px 5px;
     color: gray;
     font-family: 'Courier New', Courier, monospace;
 }
