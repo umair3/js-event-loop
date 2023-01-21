@@ -13,10 +13,10 @@ header {
 }
 footer {
     background-color: #D80;
-    height: -76px;
+   /* height: -76px; */
     color: white;
-   font-style: inherit;
-    padding-top: -25px;
+    font-style: inherit;
+  /*  padding-top: -25px; */
 }
 .h-text {
     padding: -5%;
