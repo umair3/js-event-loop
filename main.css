@@ -13,10 +13,10 @@ header {
 }
 footer {
     background-color: #D80;
-   /* height: -76px; */
     color: white;
-    font-style: inherit;
-  /*  padding-top: -25px; */
+    /* font-style: inherit; */
+    display: flex;
+    justify-content: flex-start;
 }
 .h-text {
     padding: -5%;
@@ -109,10 +109,10 @@ textarea {
 
 .queue {
     background-color: white; 
-    left: 411px;
     padding: 20px;
     display: flex;
     justify-content: flex-start;
+    float: left;
 }
 
 .child-stack,
