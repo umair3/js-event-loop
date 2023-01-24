@@ -1,6 +1,5 @@
 body {
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
-    monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
   font-size: 20px;
   margin: 0%;
   padding: 0%;
@@ -14,10 +13,10 @@ header {
 }
 footer {
   background-color: #d80;
-  height: -76px;
   color: white;
-  font-style: inherit;
   padding-top: -25px;
+  display: flex;
+  justify-content: flex-start;
 }
 .h-text {
   padding: -5%;
