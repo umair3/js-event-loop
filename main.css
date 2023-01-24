@@ -1,182 +1,177 @@
-body {    
-    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-    font-size: 20px;
-    margin: 0%;
-    padding: 0%;
+body {
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+  font-size: 20px;
+  margin: 0%;
+  padding: 0%;
 }
 header {
-    background-color: #D80;
-    padding: 24px;
-    height: 10px;
-    padding-top: 1px;
-    color: white;
+  background-color: #d80;
+  padding: 24px;
+  height: 10px;
+  padding-top: 1px;
+  color: white;
 }
 footer {
-    background-color: #D80;
-    color: white;
-    /* font-style: inherit; */
-    display: flex;
-    justify-content: flex-start;
+  background-color: #d80;
+  color: white;
+  padding-top: -25px;
+  display: flex;
+  justify-content: flex-start;
 }
 .h-text {
-    padding: -5%;
-    color: honeydew;
-    font-size: 132%;
-    padding: -5%;
-    padding-top: -81%;
-    display: inline;
-    top: 35%;
+  padding: -5%;
+  color: honeydew;
+  font-size: 132%;
+  padding: -5%;
+  padding-top: -81%;
+  display: inline;
+  top: 35%;
 }
 
 .body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.buttons {
-    background: #FDF6E3;
-    float: left;
-    padding-block: 7px;
-    padding-left: 179px;
-    padding-right: 6px;
+#b1,#b2,#b3,#b4 {
+  display: none;
+  float: left;
 }
 
 .left-body {
-    order: 1;
-    background: #FDF6E3;
+  order: 1;
+  background: #fdf6e3;
 }
 
 .right-body {
-    order: 2;
-    overflow: hidden;
-    flex:auto;
+  order: 2;
+  overflow: hidden;
+  flex: auto;
 }
-.upper-body{
-    display: flex;
-    float: left;
+.upper-body {
+  display: flex;
+  float: left;
 }
 
 .editor {
-    display: inline-flex;
-    padding: 20px;
+  display: inline-flex;
+  padding: 20px;
 }
 
 .line-numbers {
-    width: 20px;
-    background-color: #efe4c1;
-    text-align: center;
-    margin: 0px;
-    padding-left: 10px;
-    margin-left: -19px;
+  width: 20px;
+  background-color: #efe4c1;
+  text-align: center;
+  margin: 0px;
+  padding-left: 10px;
+  margin-left: -19px;
 }
 
 .line-numbers span::before {
-    background-color: #efe4c1;
-    margin-top: -38px;
-    margin-left: -8px;
-    content: counter(linenumber);
+  background-color: #efe4c1;
+  margin-top: -38px;
+  margin-left: -8px;
+  content: counter(linenumber);
 }
 
 .line-numbers span {
-    counter-increment: linenumber;
-    display: block;
+  counter-increment: linenumber;
+  display: block;
 }
 textarea {
-    overflow-y: hidden;
-    padding: 1px;
-    border: none;
-    min-width: 400px;
-    outline: none;
-    resize: none;
-    background-color: #FDF6E3;
-    font-size: inherit;
+  overflow-y: hidden;
+  padding: 1px;
+  border: none;
+  min-width: 400px;
+  outline: none;
+  resize: none;
+  background-color: #fdf6e3;
+  font-size: inherit;
 }
 
 .stack-call {
-    float: left;
-    background-color: white;
-    padding: 20px;
+  float: left;
+  background-color: white;
+  padding: 20px;
+  width: 19%;
 }
 
 .web {
-    background-color: white;
-    padding: 21px;
-    height: 350px;
-    float: right;
+  background-color: white;
+  padding: 21px;
+  height: 350px;
+  float: right;
 }
 
 .queue {
-    background-color: white; 
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    float: left;
+  background-color: white;
+  left: 411px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .child-stack,
 .child-queue,
 .child-web {
-    border: 2px #ddd dashed;
-    padding: 2px 35px 1px 5px;
-    color: gray;
-    font-family: 'Courier New', Courier, monospace;
+  border: 2px #ddd dashed;
+  padding: 2px 1px 1px 5px;
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .child-queue {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .child-web {
-    padding-left: 18px;
-    width: 743px;
-    float: left;
+  padding-left: 18px;
+  width: 743px;
+  float: left;
 }
 
 .c-child-stack {
-    padding-bottom: 306px;
-    padding-left: 4px;
+  padding-bottom: 306px;
+  padding-left: 4px;
 }
 
 .c-child-web {
-    padding-bottom: 306px;
-    padding-left: 13px;
+  padding-bottom: 306px;
+  padding-left: 13px;
 }
 
 .c-child-queue {
-    padding: 101px;
+  padding: 101px;
 }
 
 .help {
-    float: right;
-    background-color: #D80;
-    font-size: larger;
-    color: white;
-    text-decoration: none;
+  float: right;
+  background-color: #d80;
+  font-size: larger;
+  color: white;
+  text-decoration: none;
 }
 
-
-
 .fa-sync-alt {
-    font-size: 83px;
-    color: darkorange;
-    color:darkorange;
-    float: left;
+  font-size: 83px;
+  color: darkorange;
+  color: darkorange;
+  float: left;
 }
 
 .fas-fa-sync-alt {
-    font-size: 100px;
-    color: black;
+  font-size: 100px;
+  color: black;
 }
 
 .settings-button {
-    border: none;
-    background: none;
-    color: #eee;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    margin-right: 13px;
-    margin-top: -5px;
+  border: none;
+  background: none;
+  color: #eee;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 13px;
+  margin-top: -5px;
 }
-

@@ -20,11 +20,11 @@
         </header>
         <div class="body">
             <section class="left-body">
-                <div class="buttons">
-                    <button class="button">Edit</button>
-                    <button class="button">Rerun</button>
-                    <button class="button">Pause</button>
-                    <button class="button">Resume</button>
+                <div>
+                    <input type="button" id="b1" value="Save" onclick="makeChange()"/>
+                    <input type="button" id="a"  value="Save+Run" onclick="makeChange()"/>
+                    <input type="button" id="b3" value="Pause" onclick="makeChange()"/>
+                    <input type="button" id="b4" value="Resume" onclick="makeChange()"/>
                 </div>
                 <div class="code-area">
                     <div class="editor">
@@ -90,6 +90,7 @@
     </script>
     <script type="module" src="modules/ds.js"></script>
     <script type="module" src="index.js"></script>
+    <script type="module" src="modules/buttons.js"></script>
 </body>
 
 </html>
