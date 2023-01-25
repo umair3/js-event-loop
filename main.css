@@ -35,9 +35,9 @@ footer {
   flex-wrap: wrap;
 }
 
-#b1,#b2,#b3,#b4 {
+#b1,#b2,#b3,#b4{
   display: none;
-  float: left;
+  float: right;
 }
 
 .left-body {
