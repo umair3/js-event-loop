@@ -111,6 +111,7 @@ textarea {
   display: -webkit-inline-box;
   justify-content: flex-start;
   margin-top: 86px;
+  margin-left: -83px;
 }
 
 .child-stack,
@@ -124,7 +125,7 @@ textarea {
 
 .child-queue {
   overflow-y: scroll;
-  width: 382%;
+  width:418%;
 }
 
 .child-web {
