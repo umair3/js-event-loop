@@ -124,6 +124,7 @@ textarea {
 
 .child-queue {
   overflow-y: scroll;
+  width: 382%;
 }
 
 .child-web {
