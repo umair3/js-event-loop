@@ -110,6 +110,7 @@ textarea {
   padding: 20px;
   display: -webkit-inline-box;
   justify-content: flex-start;
+  margin-top: 86px;
 }
 
 .child-stack,
