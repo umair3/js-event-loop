@@ -161,10 +161,15 @@ textarea {
 }
 
 .fa-sync-alt {
-  font-size: 83px;
-  color: darkorange;
-  color: darkorange;
-  float: left;
+    font-size: 60px;
+    color: darkorange;
+    float: left;
+}
+
+.fas-fa-sync-alt {
+    font-size: 100px;
+    color: black;
+    float: left;
 }
 
 .settings-button {
