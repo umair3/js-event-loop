@@ -113,8 +113,10 @@ textarea {
   background-color: white;
   left: 411px;
   padding: 20px;
-  display: flex;
+  display: -webkit-inline-box;
   justify-content: flex-start;
+  margin-top: 86px;
+  margin-left: -83px;
 }
 
 .child-stack,
@@ -128,6 +130,7 @@ textarea {
 
 .child-queue {
   overflow-y: scroll;
+  width:418%;
 }
 
 .child-web {
