@@ -1,6 +1,5 @@
 body {
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
-    monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
   font-size: 20px;
   margin: 0%;
   padding: 0%;
@@ -14,10 +13,10 @@ header {
 }
 footer {
   background-color: #d80;
-  height: -76px;
   color: white;
-  font-style: inherit;
   padding-top: -25px;
+  display: flex;
+  justify-content: flex-start;
 }
 .h-text {
   padding: -5%;
@@ -33,6 +32,10 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.b{
+  float: right;
+
 }
 
 #b1,#b2,#b3,#b4{
@@ -109,8 +112,10 @@ textarea {
   background-color: white;
   left: 411px;
   padding: 20px;
-  display: flex;
+  display: -webkit-inline-box;
   justify-content: flex-start;
+  margin-top: 86px;
+  margin-left: -83px;
 }
 
 .child-stack,
@@ -124,6 +129,7 @@ textarea {
 
 .child-queue {
   overflow-y: scroll;
+  width:418%;
 }
 
 .child-web {
@@ -159,11 +165,6 @@ textarea {
   color: darkorange;
   color: darkorange;
   float: left;
-}
-
-.fas-fa-sync-alt {
-  font-size: 100px;
-  color: black;
 }
 
 .settings-button {
