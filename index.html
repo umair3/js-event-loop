@@ -20,11 +20,12 @@
         </header>
         <div class="body">
             <section class="left-body">
-                <div class="buttons">
-                    <button class="button">Edit</button>
-                    <button class="button">Rerun</button>
-                    <button class="button">Pause</button>
-                    <button class="button">Resume</button>
+
+                <div class="b">
+                    <input type="button" id="a" value="Save+Run" onclick="makeChange()" />
+                    <input type="button" id="b1" value="Save" onclick="makeChange()" /> 
+                    <input type="button" id="b3" value="Pause" onclick="makeChange()" />
+                    <input type="button" id="b4" value="Resume" onclick="makeChange()" />
                 </div>
                 <div class="code-area">
                     <div class="editor">
@@ -66,7 +67,7 @@
 
         </div>
         <footer>
-            Line Count:0 Line Number:0 Status: running||stopped||paused
+            Line Count:0 Line Number:0 Status: Running||Stopped||Paused 
         </footer>
     </div>
     <script type="text/javascript">
@@ -79,6 +80,7 @@
                 .fill('<span></span>')
                 .join('')
         })
+        //Event listener
         textarea.addEventListener('keydown', event => {
             if (event.key === 'Tab') {
                 let start = textarea.selectionStart
@@ -90,6 +92,19 @@
     </script>
     <script type="module" src="modules/ds.js"></script>
     <script type="module" src="index.js"></script>
+    <script type="module" src="modules/buttons.js"></script>
+
+
+    <script type="text/javascript">
+        function makeChange() {
+    document.getElementById("a").style.visibility="hidden";
+    document.getElementById("b1").style.display = "flex";
+    document.getElementById("b3").style.display = "flex";
+    document.getElementById("b4").style.display = "flex";
+    
+}
+    </script>
+
 </body>
 
 </html>
