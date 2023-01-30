@@ -20,9 +20,10 @@
         </header>
         <div class="body">
             <section class="left-body">
-                <div>
-                    <input type="button" id="b1" value="Save" onclick="makeChange()" />
+
+                <div class="b">
                     <input type="button" id="a" value="Save+Run" onclick="makeChange()" />
+                    <input type="button" id="b1" value="Save" onclick="makeChange()" /> 
                     <input type="button" id="b3" value="Pause" onclick="makeChange()" />
                     <input type="button" id="b4" value="Resume" onclick="makeChange()" />
                 </div>
@@ -91,6 +92,18 @@
     <script type="module" src="modules/ds.js"></script>
     <script type="module" src="index.js"></script>
     <script type="module" src="modules/buttons.js"></script>
+
+
+    <script type="text/javascript">
+        function makeChange() {
+    document.getElementById("a").style.visibility="hidden";
+    document.getElementById("b1").style.display = "flex";
+    document.getElementById("b3").style.display = "flex";
+    document.getElementById("b4").style.display = "flex";
+    
+}
+    </script>
+
 </body>
 
 </html>

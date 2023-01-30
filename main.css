@@ -33,10 +33,15 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.b{
+  float: right;
+
+}
 
 #b1,#b2,#b3,#b4 {
   display: none;
-  float: left;
+  float: right;
+
 }
 
 .left-body {
