@@ -158,6 +158,7 @@ textarea {
   font-size: larger;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .fa-sync-alt {
