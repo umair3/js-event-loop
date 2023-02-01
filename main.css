@@ -33,10 +33,14 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.b{
+  float: right;
 
-#b1,#b2,#b3,#b4 {
+}
+
+#b1,#b2,#b3,#b4{
   display: none;
-  float: left;
+  float: right;
 }
 
 .left-body {
@@ -105,11 +109,11 @@ textarea {
 }
 
 .queue {
-  background-color: white;
-  left: 411px;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-start;
+    background-color: white; 
+    left: 411px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .child-stack,
@@ -122,7 +126,7 @@ textarea {
 }
 
 .child-queue {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .child-web {
@@ -154,15 +158,16 @@ textarea {
 }
 
 .fa-sync-alt {
-  font-size: 83px;
-  color: darkorange;
-  color: darkorange;
-  float: left;
+    font-size: 83px;
+    color: darkorange;
+    color:darkorange;
+    float: left;
 }
 
 .fas-fa-sync-alt {
-  font-size: 100px;
-  color: black;
+    font-size: 100px;
+    color: black;
+    float: left;
 }
 
 .settings-button {
