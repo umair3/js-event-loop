@@ -109,11 +109,10 @@ textarea {
 }
 
 .queue {
-    background-color: white; 
-    left: 411px;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
+  background-color: white;
+  display: inline-flex;
+  margin-left: 20px;
+  width: -webkit-fill-available;
 }
 
 .child-stack,
@@ -155,13 +154,15 @@ textarea {
   font-size: larger;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .fa-sync-alt {
-    font-size: 83px;
-    color: darkorange;
-    color:darkorange;
-    float: left;
+  font-size: 66px;
+  color: darkorange;
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
 .fas-fa-sync-alt {
