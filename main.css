@@ -9,7 +9,6 @@ header {
   padding: 24px;
   height: 10px;
   padding-top: 1px;
-  color: white;
 }
 footer {
   background-color: #d80;
@@ -35,6 +34,7 @@ footer {
 }
 .b{
   float: right;
+  padding: 10px;
 }
 
 #b1,#b2,#b3,#b4{
@@ -124,8 +124,7 @@ textarea {
 }
 
 .child-queue {
-  overflow-y: scroll;
-  width:418%;
+    overflow-y: scroll;
 }
 
 .child-web {
@@ -156,10 +155,12 @@ textarea {
   text-decoration: none;
   cursor: pointer;
 }
-
+a:hover{
+  background-color: black;
+}
 .fa-sync-alt {
   font-size: 66px;
-  color: darkorange;
+  color: #d80;
   float: left;
   margin-left: 20px;
   margin-top: 8px;
