@@ -156,10 +156,12 @@ textarea {
   text-decoration: none;
   cursor: pointer;
 }
-
+a:hover{
+  background-color: black;
+}
 .fa-sync-alt {
   font-size: 66px;
-  color: darkorange;
+  color: #d80;
   float: left;
   margin-left: 20px;
   margin-top: 8px;
