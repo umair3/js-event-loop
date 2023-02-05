@@ -13,9 +13,7 @@ header {
 footer {
   background-color: #d80;
   color: white;
-  padding-top: -25px;
-  display: flex;
-  justify-content: flex-start;
+ 
 }
 .h-text {
   padding: -5%;
