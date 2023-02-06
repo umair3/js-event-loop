@@ -150,7 +150,7 @@ textarea {
 .help {
   float: right;
   background-color: #d80;
-  font-size: larger;
+  font-size: inherit;
   color: white;
   text-decoration: none;
   cursor: pointer;
