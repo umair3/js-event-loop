@@ -20,7 +20,7 @@ footer {
 .h-text {
   padding: -5%;
   color: honeydew;
-  font-size: 132%;
+  font-size: 20px;
   padding: -5%;
   padding-top: -81%;
   display: inline;
@@ -150,7 +150,7 @@ textarea {
 .help {
   float: right;
   background-color: #d80;
-  font-size: larger;
+  font-size: inherit;
   color: white;
   text-decoration: none;
   cursor: pointer;
