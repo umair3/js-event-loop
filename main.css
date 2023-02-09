@@ -18,11 +18,9 @@ footer {
   justify-content: flex-start;
 }
 .h-text {
-  padding: -5%;
+  
   color: honeydew;
   font-size: 20px;
-  padding: -5%;
-  padding-top: -81%;
   display: inline;
   top: 35%;
 }
