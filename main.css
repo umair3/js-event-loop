@@ -103,7 +103,8 @@ textarea {
 .queue {
   background-color: white;
   display: inline-flex;
-  margin-left: 20px;
+  flex-direction: column;
+  margin: 20px;
   width: -webkit-fill-available;
 }
 
