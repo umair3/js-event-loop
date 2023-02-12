@@ -42,8 +42,6 @@ footer {
 
 .right-body {
   order: 2;
-  overflow: hidden;
-  flex: auto;
 }
 .upper-body {
   display: flex;
