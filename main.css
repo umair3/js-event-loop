@@ -1,6 +1,8 @@
-body {
+html {
   font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
   font-size: 20px;
+}
+body {
   margin: 0%;
   padding: 0%;
 }
@@ -196,4 +198,23 @@ a:hover{
   padding: 0;
   margin-right: 13px;
   margin-top: -5px;
+}
+
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 7vh;
+    left: 5vw;
+    width: 90vw;
+    background-color: #161616;
+    transition: all 0.3s ease-in;
+  }
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+  }
 }
