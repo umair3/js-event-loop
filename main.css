@@ -62,6 +62,7 @@ a {
 .left-body {
   order: 1;
   background: #fdf6e3;
+  width: 30%;
 }
 
 .right-body {
