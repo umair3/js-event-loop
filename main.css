@@ -66,6 +66,7 @@ a {
 
 .right-body {
   order: 2;
+  flex-wrap: wrap;
 }
 .upper-body {
   display: flex;
