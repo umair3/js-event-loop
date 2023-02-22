@@ -66,6 +66,7 @@ a {
 
 .right-body {
   order: 2;
+  display: flex;
 }
 .upper-body {
   display: flex;
