@@ -67,6 +67,7 @@ a {
 
 .right-body {
   order: 2;
+  width: 70%;
   flex-wrap: wrap;
 }
 .upper-body {
