@@ -62,11 +62,13 @@ a {
 .left-body {
   order: 1;
   background: #fdf6e3;
+  width: 30%;
 }
 
 .right-body {
   order: 2;
   width: 70%;
+  flex-wrap: wrap;
 }
 .upper-body {
   display: flex;
